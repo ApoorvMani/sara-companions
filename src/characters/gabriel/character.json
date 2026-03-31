@@ -1,0 +1,21 @@
+{
+  "id": "gabriel",
+  "name": "Gabriel",
+  "universe": "supernatural",
+  "behaviorWeights": {
+    "dance": 25,
+    "sleep": 10,
+    "sit": 15,
+    "walk": 45,
+    "idle": 5
+  },
+  "quotes": [
+    "I'm the trickster.",
+    "Candy is important!",
+    "Can't keep a trickster down.",
+    "Hello? Trickster here.",
+    "Now, that's funny."
+  ],
+  "color": "#e67e22",
+  "signature": "trickster_magic"
+}

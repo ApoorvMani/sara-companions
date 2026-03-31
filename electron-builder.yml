@@ -1,0 +1,17 @@
+appId: com.ann.companions
+productName: Ann's Companions
+directories:
+  buildResources: build
+win:
+  target: portable
+  icon: assets/icon.ico
+portable:
+  artifactName: AnnsCompanions.exe
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
+  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+extraResources:
+  - 'src/characters/**/*'

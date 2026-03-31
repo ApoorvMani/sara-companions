@@ -1,0 +1,21 @@
+{
+  "id": "sam",
+  "name": "Sam Winchester",
+  "universe": "supernatural",
+  "behaviorWeights": {
+    "dance": 5,
+    "sleep": 15,
+    "sit": 25,
+    "walk": 50,
+    "idle": 5
+  },
+  "quotes": [
+    "We're the guys who saved the world.",
+    "I don't trust easily.",
+    "Research is what I do.",
+    "We hunt monsters.",
+    "The family business."
+  ],
+  "color": "#8e44ad",
+  "signature": "research_mood"
+}

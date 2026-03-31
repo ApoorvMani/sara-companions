@@ -1,0 +1,21 @@
+{
+  "id": "bts_jungkook",
+  "name": "Jungkook",
+  "universe": "bts",
+  "behaviorWeights": {
+    "dance": 35,
+    "sleep": 5,
+    "sit": 15,
+    "walk": 40,
+    "idle": 5
+  },
+  "quotes": [
+    "I purple you 💜",
+    "Stay alive",
+    "Dreamers",
+    "Euphoria",
+    "Begin"
+  ],
+  "color": "#ff6b6b",
+  "signature": "euphoria_dance"
+}

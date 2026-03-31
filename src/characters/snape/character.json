@@ -1,0 +1,13 @@
+{
+  "id": "snape",
+  "name": "Severus Snape",
+  "universe": "harry-potter",
+  "quotes": [
+    "Turn to page 394.",
+    "Obviously...",
+    "I can teach you how to bottle fame, brew glory, even stopper death...",
+    "Always."
+  ],
+  "spritesheetPath": "spritesheet.png",
+  "spritesheetJsonPath": "spritesheet.json"
+}

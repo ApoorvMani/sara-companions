@@ -1,0 +1,21 @@
+{
+  "id": "castiel",
+  "name": "Castiel",
+  "universe": "supernatural",
+  "behaviorWeights": {
+    "dance": 5,
+    "sleep": 5,
+    "sit": 20,
+    "walk": 65,
+    "idle": 5
+  },
+  "quotes": [
+    "I'm the one who gripped you tight and raised you from Perdition.",
+    "I don't understand that reference.",
+    "Assbutt!",
+    "Hey, assbutt!",
+    "I learned it by watching you."
+  ],
+  "color": "#3498db",
+  "signature": "wings_show"
+}

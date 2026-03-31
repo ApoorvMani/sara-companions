@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ann's Companions</title>
+    <!-- Relaxing CSP for dev with local files -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: transparent;
+      }
+      #pet-canvas {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: auto; /* Enable mouse events */
+      }
+      /* Ensure clicks are only caught by interactable elements like the canvas */
+      html {
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="pet-canvas"></canvas>
+    <script type="module" src="./pet.js"></script>
+  </body>
+</html>

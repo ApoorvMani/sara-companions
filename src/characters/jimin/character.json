@@ -1,0 +1,22 @@
+{
+  "id": "jimin",
+  "name": "Jimin",
+  "universe": "bts",
+  "behaviorWeights": {
+    "dance": 35,
+    "sleep": 5,
+    "sit": 15,
+    "walk": 40,
+    "idle": 5
+  },
+  "quotes": [
+    "I purple you 💜",
+    "ARMY, I love you!",
+    "We are bulletproof.",
+    "Life goes on.",
+    "Filter.",
+    "Promise."
+  ],
+  "color": "#7c4dff",
+  "signature": "mic_drop_dance"
+}

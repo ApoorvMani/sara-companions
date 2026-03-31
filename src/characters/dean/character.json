@@ -1,0 +1,22 @@
+{
+  "id": "dean",
+  "name": "Dean Winchester",
+  "universe": "supernatural",
+  "behaviorWeights": {
+    "dance": 5,
+    "sleep": 15,
+    "sit": 25,
+    "walk": 50,
+    "idle": 5
+  },
+  "quotes": [
+    "Saving people, hunting things. The family business.",
+    "Driver picks the music, shotgun shuts his cakehole.",
+    "I'm not gonna die in a hospital where the nurses aren't even hot.",
+    "Son of a bitch!",
+    "I got a year to live, Sam. I'd like to make the most of it.",
+    "Pie. I need pie."
+  ],
+  "color": "#2c3e50",
+  "signature": "air_guitar"
+}

@@ -1,0 +1,21 @@
+{
+  "id": "harry",
+  "name": "Harry Potter",
+  "universe": "harry_potter",
+  "behaviorWeights": {
+    "dance": 10,
+    "sleep": 5,
+    "sit": 20,
+    "walk": 60,
+    "idle": 5
+  },
+  "quotes": [
+    "Expelliarmus!",
+    "I solemnly swear I am up to no good.",
+    "Mischief managed!",
+    "It does not do to dwell on dreams and forget to live.",
+    "After all this time? Always."
+  ],
+  "color": "#740001",
+  "signature": "magic_wand"
+}
