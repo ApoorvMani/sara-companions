@@ -8,18 +8,25 @@ let tray = null
 
 export function setupTray() {
   const iconPath = app.isPackaged
-    ? join(process.resourcesPath, 'app/assets/tray-icon.png')
-    : join(__dirname, '../../assets/tray-icon.png')
+    ? join(process.resourcesPath, 'app/assets/tray-icon.ico')
+    : join(__dirname, '../../assets/tray-icon.ico')
+  console.log('[Tray] Icon path:', iconPath)
+  console.log('[Tray] Is packaged:', app.isPackaged)
+  console.log('[Tray] File exists:', fs.existsSync(iconPath))
+  
   let trayIcon = nativeImage.createFromPath(iconPath)
+  console.log('[Tray] Icon loaded, isEmpty:', trayIcon.isEmpty())
 
   if (trayIcon.isEmpty()) {
-    // Graceful fallback if image doesn't exist
+    console.log('[Tray] Icon empty, using fallback')
     trayIcon = nativeImage.createFromDataURL(
       'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAADFJREFUOE9jZKAQMFKon2HVAQwM/xmwmkFXx/D/PwPDIxigw0MHg56OATU1gYKBQn0AligP3w8D3XIAAAAASUVORK5CYII='
     )
   }
 
   tray = new Tray(trayIcon)
+  tray.setToolTip("Ann's Companions ✨")
+  console.log('[Tray] Created successfully')
 
   const charactersDir = app.isPackaged
     ? join(process.resourcesPath, 'src/characters')

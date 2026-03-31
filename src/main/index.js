@@ -29,7 +29,7 @@ app.whenReady().then(() => {
         type: 'info',
         title: "Ann's Companions 💜",
         message: "Made for you with love 💜",
-        detail: 'A little companion to brighten your days. Enjoy! ✨'
+        detail: 'Someone who adores you made this just for you. Enjoy! ✨'
       })
       .then(() => {
         // After closing the message, ask about startup
