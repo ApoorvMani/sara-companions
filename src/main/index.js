@@ -21,15 +21,24 @@ process.on('unhandledRejection', logCrash)
 app.whenReady().then(() => {
   createWindow()
 
-  // First launch startup registration prompt (show after window creation)
+  // First launch - show special message
   if (store.get('firstLaunch')) {
     store.set('firstLaunch', false)
     dialog
       .showMessageBox(getWindow(), {
-        type: 'question',
-        buttons: ['Yes', 'No'],
-        title: 'Startup Settings',
-        message: "Would you like Ann's Companions to start automatically with Windows?"
+        type: 'info',
+        title: "Ann's Companions 💜",
+        message: "Made for you with love 💜",
+        detail: 'A little companion to brighten your days. Enjoy! ✨'
+      })
+      .then(() => {
+        // After closing the message, ask about startup
+        return dialog.showMessageBox(getWindow(), {
+          type: 'question',
+          buttons: ['Yes', 'No'],
+          title: 'Startup Settings',
+          message: "Would you like Ann's Companions to start automatically with Windows?"
+        })
       })
       .then((result) => {
         if (result.response === 0) {

@@ -2,17 +2,13 @@ appId: com.ann.companions
 productName: Ann's Companions
 directories:
   buildResources: build
+  output: dist
 win:
   target:
     - target: dir
       arch:
         - x64
   icon: assets/icon.ico
-files:
-  - '!**/.vscode/*'
-  - '!src/*'
-  - '!electron.vite.config.{js,ts,mjs,cjs}'
-  - '!{.eslintcache,eslint.config.mjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
-  - '!{.env,.env.*,.npmrc,pnpm-lock.yaml}'
+asar: false
 extraResources:
   - 'src/characters/**/*'
