@@ -7,7 +7,9 @@ import fs from 'fs'
 let tray = null
 
 export function setupTray() {
-  const iconPath = join(__dirname, '../../assets/tray-icon.png')
+  const iconPath = app.isPackaged
+    ? join(process.resourcesPath, 'app/assets/tray-icon.png')
+    : join(__dirname, '../../assets/tray-icon.png')
   let trayIcon = nativeImage.createFromPath(iconPath)
 
   if (trayIcon.isEmpty()) {
