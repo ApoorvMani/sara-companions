@@ -3,10 +3,11 @@ productName: Ann's Companions
 directories:
   buildResources: build
 win:
-  target: portable
+  target:
+    - target: dir
+      arch:
+        - x64
   icon: assets/icon.ico
-portable:
-  artifactName: AnnsCompanions.exe
 files:
   - '!**/.vscode/*'
   - '!src/*'
